@@ -7,4 +7,4 @@
 
 # Swagger
 After run api, open link
-<a href="http://localhost:8000/docs">Swagger<a>
+<a href="http://localhost:8000/docs" target="_blank">Swagger<a>
