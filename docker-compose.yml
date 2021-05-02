@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+#  api:
+#    build: .
+#    ports:
+#      - "8000:8000"
+#    environment:
+#      DATABASE_HOST: "localhost"
+#      DATABASE_PORT: "5432"
+#      DATABASE_USER: "postgres"
+#      DATABASE_PASS: "postgres_password"
+#      DATABASE_NAME: "postgres"
+#      REDIS_HOSTNAME: "localhost"
+#      REDIS_PASSWORD: "password"
+
+  mydb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "postgres_password"
+    ports:
+      - 5432:5432
+
+  redis:
+    image: redis
+    command: redis-server --requirepass password
+    ports:
+      - "6379:6379"
